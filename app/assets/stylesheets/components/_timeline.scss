@@ -2,7 +2,7 @@
   color: white;
   background: #54A4D6;
   width: 100%;
-  max-width: 800px;
+  //max-width: 800px;
   //background: #fff;
   padding: 100px 50px;
   position: relative;
@@ -11,9 +11,9 @@
 .timeline:before {
   content: '';
   position: absolute;
-  top: 0px;
+  top: 110px;
   left: calc(33% + 15px);
-  bottom: 0px;
+  bottom: 259px;
   width: 4px;
   background: #ddd;
 }

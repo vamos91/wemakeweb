@@ -1,5 +1,5 @@
 .bandeau{
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: #F3F3F3;
@@ -7,6 +7,11 @@
   font-weight: lighter;
   font-size: 30px;
   color: gray;
+}
+
+.bandeau p{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
 }
 
 .bandeau2{

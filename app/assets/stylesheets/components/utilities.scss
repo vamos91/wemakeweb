@@ -1,0 +1,72 @@
+.padded {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.center{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature h4{
+  color: $deep-soft-blue;
+}
+
+.punch_line{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.card{
+  height: 300px;
+  position: relative;
+  //width: 100%;
+  background-position: center;
+  background-size: cover !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ // vertical-align: center
+}
+
+.test{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row-destination{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.site_web{
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+}
+
+.voile{
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  //bottom: -27px;
+  background-color: rgba(76,161,175, 0.4);
+  transition: all 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.site_web:hover {
+  .voile{
+    height: 100%;
+    transition: all 0.5s ease;
+  }
+}
