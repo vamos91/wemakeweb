@@ -62,7 +62,7 @@
 </div>
 
 
-
+<!--
 <div class="row row-destination" style="margin-top: 100px;">
   <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
@@ -80,7 +80,176 @@
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
    <%= image_tag 'skypicture.png', width: "100%" %>
   </div>
+</div> -->
+
+
+
+
+<div class="row row-destination" style="margin-top: 100px;">
+  <div class="col-xs-12 col-sm-6 col-md-6 test site_web">
+    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+      <%= image_tag 'EP.png', width: "100%" %>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-6 test site_web">
+    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+    <%= image_tag 'makemefly.png', width: "100%" %>
+  </div>
 </div>
+<div class="row row-destination">
+  <div class="col-xs-12 col-sm-6 col-md-6 test site_web">
+    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+    <%= image_tag 'sca.png', width: "100%" %>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-6 test site_web">
+    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+   <%= image_tag 'skypicture.png', width: "100%" %>
+  </div>
+</div>
+
+
+
+<div class="wrapper padded feature" style="margin-top: 8em;">
+  <div class="" style="padding: 30px;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'cross.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Le blog d'entreprise</h4>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'cross.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">La vidéo</h4>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'cross.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Les témoignages</h4>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row padded">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+       <div class="media">
+        <div class="media-left">
+            <%= image_tag 'cross.png',:input_html => { :class => 'media-object' } %>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Le module de paiement en ligne</h4>
+          <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'cross.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Le porte-folio/galerie photos</h4>
+            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+       <div class="media">
+        <div class="media-left">
+            <%= image_tag 'cross.png',:input_html => { :class => 'media-object' } %>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Le catalogue produit</h4>
+          <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<%= simple_form_for @contact_form do |f| %>
+<div class="container-contact100">
+
+    <%= render 'shared/map' %>
+    <div class="wrap-contact100">
+      <form class="contact100-form validate-form">
+        <span class="contact100-form-title">
+          Contactez nous
+        </span>
+
+        <div class="wrap-input100 validate-input" data-validate="Name is required">
+          <span class="label-input100">Nom</span>
+          <%= f.input :nom, label: false, :input_html => { :class => 'input100' }, placeholder: 'Votre nom'%>
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+          <span class="label-input100">Email</span>
+          <%= f.input :email, label: false, :input_html => { :class => 'input100' }, placeholder: 'Votre adresse email (ex: albator@gmail.com)' %>
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100">
+          <span class="label-input100">Téléphone</span>
+          <%= f.input :prenom, label: false, :input_html => { :class => 'input100' }, placeholder: 'Votre téléphone'%>
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+          <span class="label-input100">Message</span>
+          <%= f.input :message, label: false, :input_html => { :class => 'input100' }, rows: 10, placeholder: 'Quel est votre projet ?' %>
+          <span class="focus-input100"></span>
+        </div>
+        <div class="container-contact100-form-btn">
+          <div class="wrap-contact100-form-btn">
+            <div class="contact100-form-bgbtn"></div>
+            <button class="contact100-form-btn">
+              <%= f.submit "Envoyé", :class => 'form_button' %>
+            </button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+        <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <!-- <div class="wrapper">
