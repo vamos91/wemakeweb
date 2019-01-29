@@ -351,7 +351,34 @@ textarea.input100 {
 
 .contact100-form-btn .form_button{
   background: transparent;
+  color: white;
 }
+
+.contact100-form-btn a{
+  color: white;
+}
+
+.cta a{
+  /*height: 90px;*/
+  padding: 0 50px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 244px;
+  color: #4CA1AF;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.cta:hover{
+padding: 0 100px;
+transition: all 1s ease;
+}
+
+
 
 /*------------------------------------------------------------------
 [ Responsive ]*/

@@ -10,10 +10,6 @@
   justify-content: center;
 }
 
-.feature h4{
-  color: $deep-soft-blue;
-}
-
 .punch_line{
   font-family: 'Dancing Script', cursive;
   font-size: 30px;
@@ -71,7 +67,25 @@
   }
 }
 
+.feature h4{
+  color: $deep-soft-blue;
+}
 
-.media-left img {
-  height: 6%;
+.feature p{
+  color: gray;
+  font-size: 17px;
+}
+
+.media-left img{
+height: 10%;
+padding-right: 10px;
+}
+
+.media-body p{
+  padding-right: 15px;
+  color: white;
+}
+
+.competentes p{
+  font-size: 14px;
 }
