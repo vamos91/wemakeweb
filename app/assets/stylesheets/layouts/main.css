@@ -34,6 +34,13 @@
 	box-sizing: border-box;
 }
 
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
 /*body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;

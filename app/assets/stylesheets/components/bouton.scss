@@ -5,4 +5,11 @@
   color: white;
   border-radius: 50px;
   margin-right: 50px;
+
+}
+
+.bouton_header:hover{
+  background-color: white;
+  color: $deep-soft-blue;
+  transition: 0.4s;
 }
