@@ -13,10 +13,10 @@ module PersonalWebResume
       generate.helper false
       generate.test_framework  :test_unit, fixture: false
     end
-    #config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-    config.action_mailer.delivery_method = :postmark
+    #config.action_mailer.delivery_method = :postmark
     #config.action_mailer.postmark_settings = { :api_token => "f2c82725-bc9c-41e0-940c-e9032fe2b8f6" }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
