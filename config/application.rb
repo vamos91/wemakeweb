@@ -13,7 +13,7 @@ module PersonalWebResume
       generate.helper false
       generate.test_framework  :test_unit, fixture: false
     end
-    config.assets.initialize_on_precompile = false
+    #config.assets.initialize_on_precompile = false
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
     config.action_mailer.delivery_method = :postmark
