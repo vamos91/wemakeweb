@@ -26,7 +26,7 @@ function close_banner(){
 
 
 
-$(document).ready(function(){
+$(".scroll_up").ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -53,8 +53,30 @@ $(document).ready(function(){
 
 
 
+$('.scroll_up').hide();
+  (function(){
+    $(window).scroll(function() {
+
+        if($(this).scrollTop() > 500) {
+            $('.scroll_up').fadeIn();
+        } else {
+            $('.scroll_up').hide();
+        }
+    });
+  })();
 
 function up_to_header(){
+    $("html, body").animate({scrollTop: $('.video').offset().top}, 1000);
+  };
 
-};
+  function down_to_contact_form(){
+    $("html, body").animate({scrollTop: $('#contact_form').offset().top}, 1000);
+  };
+
+  function down_to_about(){
+    $("html, body").animate({scrollTop: $('#about').offset().top}, 1000);
+  };
+function down_to_service(){
+    $("html, body").animate({scrollTop: $('#our_service').offset().top}, 1000);
+  };
 

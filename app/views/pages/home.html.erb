@@ -1,16 +1,18 @@
-<div class="video banner-bg-video" style="margin-bottom: 0px;">
+<div class="video banner-bg-video bg-video-color-header" style="margin-bottom: 0px;">
   <div class="banner-title">
     <div>
  </div>
     <p class="nom">WE MAKE WEB</p>
     <h1 class="base-line">AGENCE DE CRÉATION DE SITE WEB SUR-MESURE : MONTREZ AU MONDE CE QUE VOUS SAVEZ FAIRE.</h1>
     <p class="slogan"><i>"La qualité de notre communication est déterminée non par la manière dont nous disons les choses, mais par la manière dont elles sont comprises."</i></p>
-    <p class="padded"><%= link_to "Contactez nous", root_path(anchor: 'contact_form'), class: "bouton1 bouton_header" %>
-      <%= link_to "Pourquoi nous ?", root_path(anchor: 'about'), class: "bouton2 bouton_header" %>
-      <!--  <button type="button" onclick="close_banner()" class="bouton2 bouton_header" id="close-button">En savoir plus</button> -->
 
-    </p>
-  <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+<button class="bouton0 bouton_header" type="button" onclick="down_to_service()" style=" z-index: 10;">Nos services
+</button>
+<button class="bouton1 bouton_header" type="button" onclick="down_to_about()" style=" z-index: 10;">Pourquoi nous ?
+</button>
+<button class="bouton2 bouton_header" type="button" onclick="down_to_contact_form()" style=" z-index: 10;">Contactez nous
+</button>
+  <p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="position: absolute; bottom: 10px;font-size: 40px;"></span></p>
   </div>
 <% @embed_code = "<iframe width='100%' src='https://www.youtube.com/embed/ICr_bOuM9Zo?mute=1&autoplay=1&loop=1&playlist=ICr_bOuM9Zo'?rel=0&amp;controls=0;showinfo=0;loop=1; frameborder='0' allowfullscreen></iframe>" %>
 <div id="myVideo" style="z-index: -10;"><%= raw(@embed_code) %></div>
@@ -83,7 +85,7 @@
 
 
 
-
+<!--
 <div class="row row-destination" style="margin-top: 100px;">
   <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
@@ -101,12 +103,12 @@
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
    <%= image_tag 'skypicture.png', width: "100%" %>
   </div>
-</div>
+</div> -->
 
 
 
 
-<!-- <div class="row row-destination" style="margin-top: 100px;">
+ <div class="row row-destination" style="margin-top: 100px;">
   <div class="col-xs-12 col-sm-6 col-md-6 test site_web">
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
       <%= image_tag 'EP.png', width: "100%" %>
@@ -125,7 +127,43 @@
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
    <%= image_tag 'skypicture.png', width: "100%" %>
   </div>
-</div> -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="video banner-bg-video bg-video-color-cta" style="margin-bottom: 0px;">
+
+<div class="calltoaction" style="padding: 200px;">
+  <div class="container-contact100-form-btn">
+          <div class="wrap-contact100-form-btn" style="border-radius: 50px; border: 2px solid white;">
+            <div class="contact100-form-bgbtn" style="background: transparent;"></div>
+            <button class="contact100-form-btn cta" type="button" onclick="down_to_contact_form()" style="height: 80px;">
+                <%= link_to 'JE VEUX LA MÊME CHOSE', '#'%>
+            </button>
+          </div>
+        </div>
+</div>
+<% @embed_code = "<iframe width='100%' src='https://www.youtube.com/embed/OA8NGgOD_AE?mute=1&autoplay=1&loop=1&playlist=OA8NGgOD_AE'?rel=0&amp;controls=0;showinfo=0;loop=1; frameborder='0' allowfullscreen></iframe>" %>
+<div id="myVideo" style="z-index: -10;"><%= raw(@embed_code) %></div>
+</div>
+
+
+
+
+
+
+
+
+<!--
+
 
 <div class="calltoaction" style="padding: 200px; background-color: #2C3E50;">
   <div class="container-contact100-form-btn">
@@ -138,47 +176,49 @@
         </div>
 </div>
 
+ -->
 
 
 
 
 
 
-
-<div class="wrapper feature" style="margin-top: -100px;">
+<div class="wrapper feature" id="our_service" style="margin-top: -100px;">
   <div class="container center">
-    <%= image_tag 'codeur.jpg', width: "100%"%>
-    <div class="" style="margin-top: -100px;">
+    <div class="feature_pix">
+      <%= image_tag 'codeur.jpg', width: "100%"%>
+    </div>
+    <div class="" style="margin-top: -100px; z-index: 3;">
       <div class="row row-destination">
-      <div class="col-xs-12 col-sm-6 col-md-4 service test site_web center" >
-        <div class="service_hover"></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 service square_carac test site_web center" >
+         <div class="service_hover center text-center">Conseil en communication et web marketing</div>
         <%= image_tag 'strategy.png', width: '20%' %>
         <p>STRATÉGIE ET CONSEIL</p>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 test site_web center" style="background-color: #DFE5E8; width: 211px; height: 211px;">
-        <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 service2 square_carac test site_web center">
+        <div class="service_hover center text-center">Améliorer sa visibilité sur internet est devenu un objectif de communication universel</div>
         <%= image_tag 'responsive.png', width: '20%' %>
         <p>PROJET WEB VITRINE</p>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 test site_web center" style="background-color: #EEF0F1; width: 211px; height: 211px;">
-        <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 service3 square_carac test site_web center">
+        <div class="service_hover center text-center">Ce qu'on sait faire : Gestion des utilisateurs, plateforme de réservation, boutique en ligne, etc...</div>
         <%= image_tag 'web_developement.png', width: '20%' %>
         <p>APPLICATION WEB</p>
       </div>
     </div>
     <div class="row row-destination">
-      <div class="col-xs-12 col-sm-6 col-md-4 test site_web center" style="background-color: #EEF0F1; width: 211px; height: 211px;">
-        <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 service3 square_carac test site_web center">
+        <div class="service_hover center text-center">Nous concevons et créons des design web pour une meilleur expérience utilisateur.</div>
         <%= image_tag 'web_design.png', width: '20%' %>
         <p>WEB DESIGN</p>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 test site_web center" style="background-color: #E7EBED; width: 211px; height: 211px;">
-        <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 service square_carac test site_web center">
+        <div class="service_hover center text-center">Nos solutions web s'adaptent à tout type de support : smartphone, tablette, ordinateur portable.</div>
         <%= image_tag 'responsive.png', width: '20%' %>
         <p>RESPONSIVE DESIGN</p>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 test site_web center" style="background-color: #DFE5E8; width: 211px; height: 211px;">
-        <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
+      <div class="col-xs-12 col-sm-6 col-md-4 service2 square_carac test site_web center">
+        <div class="service_hover center text-center">Développer votre présence en ligne et créer de nouveaux prospects</div>
         <%= image_tag 'responsive.png', width: '20%' %>
         <p>WEB MARKETING</p>
       </div>
@@ -188,14 +228,14 @@
 </div>
 
 
-<div class="container feature competentes" style="background-color: #F4F4F4; width: 100%; ">
+<!-- <div class="container feature competentes" style="background-color: #F4F4F4; width: 100%; ">
   <div class="row">
       <div class="col-sx-12 col-ms-12 col-md-6" style="padding-top: 40px;">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 center">
         <%= image_tag 'strategy.png', width: '10%' %>
          <h4>Strategie et conseil</h4>
-        <p class="text-center">Nous vous conseillons dans le design de votre site web. Nous partageons nos connaissances dans le marketing digital. Nous faisons le musique, vous écrivez les paroles.</p>
+        <p class="text-center">Nous vous conseillons dans le design de votre site web. Nous partageons nos connaissances dans le marketing digital. Nous composons la musique, vous écrivez les paroles.</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-6 center">
           <%= image_tag 'web_design.png', width: '10%' %>
@@ -221,7 +261,7 @@
       </div>
     </div>
 </div>
-
+ -->
 
 
 
@@ -409,26 +449,14 @@
 
 <button class="scroll_up" type="button" onclick="up_to_header()" style="position: fixed; right: 10px; bottom: 30px; z-index: 10;">
   <span class="glyphicon glyphicon-chevron-up" aria-hidden="true" style="background-color: #4CA1AF;
-  padding: 20px; border-radius: 50%;"></span>
+  padding: 20px; border-radius: 50%; color: white;"></span>
 </button>
 
 
 <script>
-  $('.scroll_up').hide();
-  (function(){
-    $(window).scroll(function() {
 
-        if($(this).scrollTop() > 500) {
-            $('.scroll_up').fadeIn();
-        } else {
-            $('.scroll_up').hide();
-        }
-    });
-  })();
 
-  function up_to_header(){
-    $("html, body").animate({scrollTop: $('.video').offset().top}, 1000);
-  };
+
 </script>
 
 
