@@ -162,3 +162,14 @@ z-index: 2;
 .feature_pix {
   z-index: 2;
 }
+
+.notice{
+  position: fixed;
+  top: 0px;
+  background-color: green;
+  width: 100%;
+  padding:30px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+}

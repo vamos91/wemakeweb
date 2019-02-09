@@ -6,7 +6,7 @@
     <h1 class="base-line">AGENCE DE CRÉATION DE SITE WEB SUR-MESURE : MONTREZ AU MONDE CE QUE VOUS SAVEZ FAIRE.</h1>
     <p class="slogan"><i>"La qualité de notre communication est déterminée non par la manière dont nous disons les choses, mais par la manière dont elles sont comprises."</i></p>
 
-<button class="bouton0 bouton_header" type="button" onclick="down_to_service()" style=" z-index: 10;">Nos services
+<button class="bouton0 bouton_header" type="button" onclick="down_to_service()" style=" z-index: 10;">Savoir-faire
 </button>
 <button class="bouton1 bouton_header" type="button" onclick="down_to_about()" style=" z-index: 10;">Pourquoi nous ?
 </button>
@@ -38,6 +38,13 @@
 </div> -->
 
 
+
+
+<div class="alert-info">
+ <%= flash[:notice]%>
+</div>
+
+
 <div class="bandeau" id="about" style="padding: 60px;">
 <p>Parce que nous aimons ce que nous faisons...et nous le faisons sur-mesure.</p>
 </div>
@@ -51,7 +58,7 @@
       <div class="col-xs-12 col-sm-4 col-md-4 text-center feature1">
         <%= image_tag 'sur_mesure.png', width: '40%' %><br>
         <br>
-         <h4>Sur-mesure</h4>
+         <h4>Du web sur-mesure !</h4>
          <br>
         <p class="text-center">Nous codons vos solutions pour répondre à vos besoins. Ni logiciel ni Wordpress pour le développement. Ici, tout est fait maison !</p>
       </div>
@@ -184,7 +191,8 @@
 
 <div class="wrapper feature" id="our_service" style="margin-top: -100px;">
   <div class="container center">
-    <div class="feature_pix">
+    <div class="feature_pix center" style="position:relative;">
+      <p style="position:absolute; color: white; font-weight: bold; font-size: 70px; background-color:rgba(117,113,113,0.6); padding:40px;">SAVOIR-FAIRE</p>
       <%= image_tag 'codeur.jpg', width: "100%"%>
     </div>
     <div class="" style="margin-top: -100px; z-index: 3;">
