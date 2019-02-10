@@ -52,7 +52,7 @@
 
 
 
-<div class="wrapper padded feature"style="margin-top: 60px;">
+<!-- <div class="wrapper padded feature"style="margin-top: 60px;">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-4 col-md-4 text-center feature1">
@@ -78,44 +78,179 @@
       </div>
     </div>
   </div>
-</div>
-
-<!-- <p class="punch_line text-center padded bandeau">Parce que nous aimons ce que nous faisons...</p> -->
-
-
-
-<div class="container padded" style="border-top: 1px solid #4CA1AF;">
-  <h4 style="font-weight: lighter; font-size: 30px; color: gray; text-align: center; font-family: 'Dancing Script', cursive;">Nous concevons et nous développons vos solutions web sur-mesure et <i><strong>from scratch</strong></i>, c'est-à-dire en partant d'une page blanche. En fonction de chaque besoin et de chaque budget nous vous proposons plusieurs plans de site : <strong>le site web One-page, le site vitrine, la landing page et le site applicatif</strong> avec base de données, gestion des utilisateurs, back-office, etc... Et voici quelques exemples...
-</h4>
-</div>
-
-
-
-
-<!--
-<div class="row row-destination" style="margin-top: 100px;">
-  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
-    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
-      <%= image_tag 'EP.png', width: "100%" %>
-  </div>
-  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
-    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
-    <%= image_tag 'makemefly.png', width: "100%" %>
-  </div>
-  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
-    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
-    <%= image_tag 'sca.png', width: "100%" %>
-  </div>
-  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
-    <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
-   <%= image_tag 'skypicture.png', width: "100%" %>
-  </div>
 </div> -->
 
 
 
 
- <div class="row row-destination" style="margin-top: 100px;">
+
+
+<div class="wrapper padded feature"style="margin-top: 60px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-4 text-center feature1">
+        <%= image_tag 'sur-mesure.png', width: '40%' %><br>
+        <br>
+         <h4>Du web sur-mesure !</h4>
+         <br>
+        <p class="text-center">Nous codons vos solutions pour répondre à vos besoins. Ni logiciel ni Wordpress pour le développement. Ici, tout est fait maison !</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 text-center feature2">
+        <%= image_tag 'cards.png', width: '40%' %><br>
+        <br>
+        <h4>Paiement 3X sans frais</h4>
+        <br>
+        <p class="text-center">Vous voulez un site pro sans vendre un rein ? Nous aimons rendre la technologie accessible et votre communication le sera également.</p>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 text-center feature3">
+        <%= image_tag 'placeholder.png', width: '40%' %><br>
+        <br>
+         <h4>Proximité client</h4>
+         <br>
+        <p class="text-center">Nous voulons préserver une proximité avec vous. Vous appellez, on arrive ! On discute de vos projets autour d'un café, on trouve une solution.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <p class="punch_line text-center padded bandeau">Parce que nous aimons ce que nous faisons...</p> -->
+
+
+
+
+
+
+
+
+<div class="wrapper feature_service">
+  <div class="container padded" style="border-top: 1px solid #4CA1AF;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 feature_service1">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'advice.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Conseil et stratégie</h4>
+            <p>Conseil en communication et web marketing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 feature_service2">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'code.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Site applicatif</h4>
+            <p>Ce qu'on sait faire : Gestion des utilisateurs, plateforme de réservation, boutique en ligne, etc...</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 feature_service3">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'design.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Site web vitrine</h4>
+            <p>Nous concevons et créons des design web pour une meilleur expérience utilisateur. Améliorer sa visibilité sur internet est devenu un objectif de communication universel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row padded">
+      <div class="col-xs-12 col-sm-6 col-md-4 feature_service4">
+       <div class="media">
+        <div class="media-left">
+            <%= image_tag 'seo.png',:input_html => { :class => 'media-object' } %>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Référencement Google</h4>
+          <p>Nous mettons en œuvre les techniques pour améliorer la position de votre site web sur les pages de résultats des moteurs de recherche.</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 feature_service5">
+        <div class="media">
+          <div class="media-left">
+              <%= image_tag 'responsive2.png',:input_html => { :class => 'media-object' } %>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Responsive design</h4>
+            <p>Nos solutions web s'adaptent à tout type de support : smartphone, tablette, ordinateur portable.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 feature_service6">
+       <div class="media">
+        <div class="media-left">
+            <%= image_tag 'marketing.png',:input_html => { :class => 'media-object' } %>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Me faire connaitre</h4>
+          <p>Développer votre présence en ligne et créer de nouveaux prospects</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<Div class="wrapper padded">
+  <div class="container padded"  style="border-top: 1px solid #4CA1AF;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <%= image_tag 'codeur.jpg', width: "100%" %>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="" >
+        <h4 style="font-weight: lighter; font-size: 30px; color: gray; text-align: center; font-family: 'Dancing Script', cursive;">Nous concevons et nous développons vos solutions web sur-mesure et <i><strong>from scratch</strong></i>, c'est-à-dire en partant d'une page blanche. En fonction de chaque besoin et de chaque budget nous vous proposons plusieurs plans de site : <strong>le site web One-page, le site vitrine, la landing page et le site applicatif</strong> avec base de données, gestion des utilisateurs, back-office, etc... Et voici quelques exemples...
+      </h4>
+      </div>
+      </div>
+    </div>
+  </div>
+</Div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row row-destination" style="margin-top: 100px;">
+  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
+    <div class="voile"><i class="fa fa-search" style="color: white; font-size: 57px;"></i></div>
+      <%= image_tag 'EP.png', width: "100%" %>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
+    <div class="voile"><i class="fa fa-search" style="color: white; font-size: 57px;"></i></div>
+    <%= image_tag 'makemefly.png', width: "100%" %>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
+    <div class="voile"><i class="fa fa-search" style="color: white; font-size: 57px;"></i></div>
+    <%= image_tag 'sca.png', width: "100%" %>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-3 test site_web">
+    <div class="voile"><i class="fa fa-search" style="color: white; font-size: 57px;"></i></div>
+   <%= image_tag 'skypicture.png', width: "100%" %>
+  </div>
+</div>
+
+
+
+
+ <!-- <div class="row row-destination" style="margin-top: 100px;">
   <div class="col-xs-12 col-sm-6 col-md-6 test site_web">
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
       <%= image_tag 'EP.png', width: "100%" %>
@@ -134,7 +269,7 @@
     <div class="voile"><%= image_tag 'cross.png', width: '20%' %></div>
    <%= image_tag 'skypicture.png', width: "100%" %>
   </div>
-</div>
+</div> -->
 
 
 
@@ -189,11 +324,11 @@
 
 
 
-<div class="wrapper feature" id="our_service" style="margin-top: -100px;">
+<!-- <div class="wrapper feature" id="our_service" style="margin-top: -100px;">
   <div class="container center">
     <div class="feature_pix center" style="position:relative;">
-      <p style="position:absolute; color: white; font-weight: bold; font-size: 70px; background-color:rgba(117,113,113,0.6); padding:40px;">SAVOIR-FAIRE</p>
-      <%= image_tag 'codeur.jpg', width: "100%"%>
+      <p style="position:absolute; color: white; font-weight: bold; font-size: 70px; background-color:rgba(117,113,113,0.6); padding:40px;">VIDÉO D'ENTREPRISE</p>
+      <%= image_tag 'montage.jpg', width: "100%"%>
     </div>
     <div class="" style="margin-top: -100px; z-index: 3;">
       <div class="row row-destination">
@@ -232,7 +367,7 @@
     </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <!-- <div class="container feature competentes" style="background-color: #F4F4F4; width: 100%; ">
@@ -592,4 +727,7 @@
 <p>Formations</p>
 </div>
  -->
+
+
+
 

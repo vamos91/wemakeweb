@@ -9,4 +9,10 @@ sr.reveal('.bandeau-banner', { origin:"left", distance: '50px', duration: 1000, 
 sr.reveal('.feature1', { origin:"bottom", distance: '50px', duration: 500, delay: 500, reset:false });
 sr.reveal('.feature2', { origin:"bottom", distance: '50px', duration: 500, delay: 800, reset:false });
 sr.reveal('.feature3', { origin:"bottom", distance: '50px', duration: 500, delay: 1100, reset:false });
-
+sr.reveal('.feature_service1', { origin:"bottom", distance: '50px', duration: 500, delay: 500, reset:false });
+sr.reveal('.feature_service2', { origin:"bottom", distance: '50px', duration: 500, delay: 800, reset:false });
+sr.reveal('.feature_service3', { origin:"bottom", distance: '50px', duration: 500, delay: 1100, reset:false });
+sr.reveal('.feature_service4', { origin:"bottom", distance: '50px', duration: 500, delay: 1400, reset:false });
+sr.reveal('.feature_service5', { origin:"bottom", distance: '50px', duration: 500, delay: 1700, reset:false });
+sr.reveal('.feature_service6', { origin:"bottom", distance: '50px', duration: 500, delay: 2000, reset:false });
+sr.reveal('.container-contact100-form-btn', { origin:"left", distance: '50px', duration: 500, delay: 2000, reset:false });

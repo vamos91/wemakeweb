@@ -173,3 +173,19 @@ z-index: 2;
   font-size: 20px;
   font-family: 'Dancing Script', cursive;
 }
+
+.feature_service .media-body p{
+  font-size: 15px;
+  color: gray;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-top: 16px;
+}
+
+.feature_service .media-body h4{
+  color: #4CA1AF;
+}
+
+.feature_service .media-left img{
+  height: 25%;
+}
