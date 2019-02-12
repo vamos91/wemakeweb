@@ -1,12 +1,12 @@
-<div class="video banner-bg-video bg-video-color-header" style="margin-bottom: 0px;">
+<div class="video banner-bg-video bg-video-color-header hidden-xs hidden-sm" style="margin-bottom: 0px;">
   <div class="banner-title">
     <div>
  </div>
     <p class="nom">WE MAKE WEB</p>
     <h1 class="base-line">AGENCE DE CRÉATION DE SITE WEB SUR-MESURE : MONTREZ AU MONDE CE QUE VOUS SAVEZ FAIRE.</h1>
     <p class="slogan"><i>"La qualité de notre communication est déterminée non par la manière dont nous disons les choses, mais par la manière dont elles sont comprises."</i></p>
-
-<button class="bouton0 bouton_header" type="button" onclick="down_to_service()" style=" z-index: 10;">Savoir-faire
+<div class="container bouton">
+  <button class="bouton0 bouton_header" type="button" onclick="down_to_service()" style=" z-index: 10;">Savoir-faire
 </button>
 <button class="bouton1 bouton_header" type="button" onclick="down_to_about()" style=" z-index: 10;">Pourquoi nous ?
 </button>
@@ -14,9 +14,25 @@
 </button>
   <p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="position: absolute; bottom: 10px;font-size: 40px;"></span></p>
   </div>
+</div>
+
 <% @embed_code = "<iframe width='100%' src='https://www.youtube.com/embed/ICr_bOuM9Zo?mute=1&autoplay=1&loop=1&playlist=ICr_bOuM9Zo'?rel=0&amp;controls=0;showinfo=0;loop=1; frameborder='0' allowfullscreen></iframe>" %>
 <div id="myVideo" style="z-index: -10;"><%= raw(@embed_code) %></div>
 </div>
+
+
+
+<div class="banner hidden-md hidden-lg">
+  <div class="" style="padding: 20px;">
+    <h1 class="nom" style="font-size: 40px;">WE MAKE WEB</h1>
+    <h4 class="base-line">AGENCE DE CRÉATION DE SITE WEB SUR-MESURE : MONTREZ AU MONDE CE QUE VOUS SAVEZ FAIRE.</h4>
+    <button class="bouton2 bouton_header" type="button" onclick="down_to_contact_form()" style=" z-index: 10;">Contactez nous
+</button>
+  </div>
+
+</div>
+
+
 
 <!-- <div class="wrapper padded" style="margin-top: 30px;">
   <div class="container">
@@ -116,7 +132,21 @@
 
 
 
-
+<div class="wrapper padded">
+  <div class="container padded"  style="border-top: 1px solid #4CA1AF;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <%= image_tag 'codeur.jpg', width: "100%" %>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="" >
+        <h4 style="font-weight: lighter; font-size: 30px; color: gray; text-align: center; font-family: 'Dancing Script', cursive;">Nous concevons et nous développons vos solutions web sur-mesure et <i><strong>from scratch</strong></i>, c'est-à-dire en partant d'une page blanche. En fonction de chaque besoin et de chaque budget nous vous proposons plusieurs plans de site : <strong>le site web One-page, le site vitrine, la landing page et le site applicatif</strong> avec base de données, gestion des utilisateurs, back-office, etc...
+      </h4>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -201,22 +231,8 @@
 
 
 
-<Div class="wrapper padded">
-  <div class="container padded"  style="border-top: 1px solid #4CA1AF;">
-    <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6">
-        <%= image_tag 'codeur.jpg', width: "100%" %>
-      </div>
-      <div class="col-xs-12 col-sm-12 col-md-6">
-        <div class="" >
-        <h4 style="font-weight: lighter; font-size: 30px; color: gray; text-align: center; font-family: 'Dancing Script', cursive;">Nous concevons et nous développons vos solutions web sur-mesure et <i><strong>from scratch</strong></i>, c'est-à-dire en partant d'une page blanche. En fonction de chaque besoin et de chaque budget nous vous proposons plusieurs plans de site : <strong>le site web One-page, le site vitrine, la landing page et le site applicatif</strong> avec base de données, gestion des utilisateurs, back-office, etc... Et voici quelques exemples...
-      </h4>
-      </div>
-      </div>
-    </div>
-  </div>
-</Div>
 
+<h4 style="font-weight: lighter; font-size: 30px; color: gray; text-align: center; font-family: 'Dancing Script', cursive;">Et voici quelques exemples...</h4>
 
 
 
@@ -281,7 +297,7 @@
 
 
 
-<div class="video banner-bg-video bg-video-color-cta" style="margin-bottom: 0px;">
+<div class="video banner-bg-video bg-video-color-cta hidden-xs" style="margin-bottom: 0px;">
 <div class="calltoaction" style="padding: 200px;">
   <div class="container-contact100-form-btn">
           <div class="wrap-contact100-form-btn" style="border-radius: 50px; border: 2px solid white;">
@@ -458,11 +474,11 @@
 
 
 
-<div class="wrapper feature feature_plugin" style="padding: 70px;">
+<div class="wrapper feature feature_plugin">
   <span class="center" style="font-family: 'Dancing Script', cursive; font-size: 40px; color: white  ">Nous développons nos propres fonctionnalités from scratch.</span>
-  <p style="color: white; text-align: center; padding: 0px 200px;">Nous concevons et nous développons vos solutions web sur-mesure et from scratch, cest-à-dire en partant d'une page blanche. En fonction de chaque besoin et de chaque budget nous vous proposons plusieurs fonctionnalités en fonction de vos ambitions.
+  <p>Nous concevons et nous développons vos solutions web sur-mesure et from scratch, cest-à-dire en partant d'une page blanche. En fonction de chaque besoin et de chaque budget nous vous proposons plusieurs fonctionnalités en fonction de vos ambitions.
 </p>
-  <div class="" style="padding: 30px; padding-top: 100px;">
+  <div class="bloc_feature">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="media">
@@ -471,8 +487,9 @@
           </div>
           <div class="media-body">
             <h4 class="media-heading">Le blog d'entreprise & actualité</h4>
-            <p>De la vie ! Voici ce que le blog d'entreprise insufle à votre site web. Il permet de tenir informé vos utilisateurs de votre actualité.</p>
+            <p class="hidden-xs">De la vie ! Voici ce que le blog d'entreprise insufle à votre site web. Il permet de tenir informé vos utilisateurs de votre actualité.</p>
           </div>
+          <hr>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
@@ -482,8 +499,9 @@
           </div>
           <div class="media-body">
             <h4 class="media-heading">Système de commentaire</h4>
-            <p>Les commentaires permettent de motiver un achat et d'influencer un utilisateur sur sa décision de vous faire confiance</p>
+            <p class="hidden-xs">Les commentaires permettent de motiver un achat et d'influencer un utilisateur sur sa décision de vous faire confiance</p>
           </div>
+          <hr>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
@@ -493,8 +511,9 @@
           </div>
           <div class="media-body">
             <h4 class="media-heading">Gestion des utilisateurs</h4>
-            <p>LOGIN - LOGOUT. Je suis sur ce que cela vous dit quelque chose. La gestion des utilisateurs permet de gerer l'authentification et les droits des utilisateurs.</p>
+            <p class="hidden-xs">LOGIN - LOGOUT. Je suis sur ce que cela vous dit quelque chose. La gestion des utilisateurs permet de gerer l'authentification et les droits des utilisateurs.</p>
           </div>
+          <hr>
         </div>
       </div>
     </div>
@@ -506,8 +525,9 @@
         </div>
         <div class="media-body">
           <h4 class="media-heading">Le module de paiement en ligne</h4>
-          <p>Ce module permet de prendre des sous dans la poche de vos utilisateurs. Vendre des produits sur internet devient simple et rapide. Nous utilisation Stripe comme système de paiement.</p>
+          <p class="hidden-xs">Ce module permet de prendre des sous dans la poche de vos utilisateurs. Vendre des produits sur internet devient simple et rapide. Nous utilisation Stripe comme système de paiement.</p>
         </div>
+        <hr>
       </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
@@ -517,8 +537,9 @@
           </div>
           <div class="media-body">
             <h4 class="media-heading">Le porte-folio/galerie photos</h4>
-            <p>Peintres, photographes, ... ils adorent. Ce module permet de mettre en valeur photos, dessins, peintures, etc...</p>
+            <p class="hidden-xs">Peintres, photographes, ... ils adorent. Ce module permet de mettre en valeur photos, dessins, peintures, etc...</p>
           </div>
+          <hr>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
@@ -528,8 +549,9 @@
         </div>
         <div class="media-body">
           <h4 class="media-heading">Le catalogue produit</h4>
-          <p>Nous ne sommes pas loin de la boutique en ligne. Il s'agit de mettre en vente vos produits et exposer vos créations.</p>
+          <p class="hidden-xs">Nous ne sommes pas loin de la boutique en ligne. Il s'agit de mettre en vente vos produits et exposer vos créations.</p>
         </div>
+        <hr>
       </div>
       </div>
     </div>

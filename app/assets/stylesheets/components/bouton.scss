@@ -4,7 +4,7 @@
   border: 2px solid white;
   color: white;
   border-radius: 50px;
-  margin-right: 50px;
+  //margin-right: 50px;
 
 }
 
@@ -12,4 +12,8 @@
   background-color: white;
   color: $deep-soft-blue;
   transition: 0.4s;
+}
+
+.banner-title .bouton{
+  letter-spacing: 70px;
 }
