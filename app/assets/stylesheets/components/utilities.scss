@@ -119,13 +119,15 @@
 }
 
 .feature h4{
-  color: $deep-soft-blue;
+  color: white;
 }
 
 .feature p{
   color: gray;
   font-size: 17px;
   z-index: 2;
+  padding: 10px;
+  text-align: justify;
 }
 
 .media-left img{
@@ -137,6 +139,11 @@ z-index: 2;
 .media-body p{
   padding-right: 15px;
   color: white;
+  height: 130px;
+}
+
+.media-heading .btn-default{
+  color: gray;
 }
 
 .competentes p{
@@ -196,11 +203,33 @@ z-index: 2;
 
 .feature_plugin p{
   color: white;
-  text-align: center;
+  //text-align: center;
  // padding: 0px 200px;
 }
 
 .bloc_feature{
   //padding: 30px;
   padding-top: 100px;
+}
+
+.button-feature{
+  border: 1px solid $deep-soft-blue;
+  text-align: center;
+  color: $deep-soft-blue;
+  padding: 10px;
+  border-radius: 20px;
+  width: 70%;
+  font-size: 15px;
+  transition: .5s;
+  cursor: pointer;
+
+}
+
+.button-feature a{
+  text-decoration: none;
+}
+
+.button-feature:hover{
+  width: 100%;
+  transition: .5s;
 }
